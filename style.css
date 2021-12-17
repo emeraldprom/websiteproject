@@ -1,0 +1,80 @@
+
+*{
+color: rgb(121, 214, 121);
+} /*wildcard unless overwrite*/
+
+body {
+   /* background-color: rgb(223, 248, 209); */
+    background-color: rgb(43, 23, 114);
+}
+.center {
+    text-align:center;
+}
+
+h1,h3{
+ color:palevioletred; font-size:60px;
+}     /* overwrites the wildcard for h1 and 3   /*selector (element tag),property,value*/   /*find html elements based on tag, class,*/
+
+h3, p{
+    color:rgb(133, 241, 133);
+     font-size:26px;
+ } /* overwrites the wildcard and the group selector*/
+
+.larger{font-size: 30px;}
+#menu{
+    display:flex;
+    height:50px;
+    background-color: yellow;
+    justify-content: space-evenly;
+    align-items:center
+}     /*switched from div to id as only use id once -nav bar is good idea, then other things can link to the id*/
+
+#menu a{
+    color:gray;
+    font-size: 36px;
+    text-decoration:none;
+}
+#menu a:hover {
+    color:pink
+}
+
+img {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+/*specific targetting, particular, add eg 36text to 1 paragraph
+
+.large {font-size:50px;} dot defines class name rather than element name
+in html <p class=large"hello text"
+class name overwrites elements
+.largetext defines class then can use it in html into one paragraph
+or use one called .centredtext 
+div - if just want a block section of site eg menu and index
+
+id like a class, pick out using element name, if there is only one of
+example nav bar #specialblue use in html attribute is id instead of class
+
+img margin left auto, margin right auto, block
+
+to hit all-asterisk
+to hit anchors <a> or h1 
+if just 3 then class without overwriting element as a whole
+id for just one part eg footer, nav bar
+margin block set pixels to zero
+right click or f12 for box model for marginsborderpadding and content etc 
+box sizing:border-box; using wild card to set a width
+height and width of element auto and length
+3 main colour values string(tomato), hex (ff6347), rgb value (255,99,71)
+rgbalpha if using transparency with hue and saturation
+libraries online googlefonts
+dont use style tags
+import fonts at top of text, head??
+
+in body
+links to other pages in a div at the top in body,3anchorss links to other pages
+select a that has parent
+display flex
+justify content,space-evenly,space between, align items, 
+flexbox froggy
+menu*/
